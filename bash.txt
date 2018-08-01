@@ -1,0 +1,9 @@
+# Special Characters:
+
+\h	the hostname up to the first .
+\n	newline
+\s	the name of the shell
+\t	the current time in 24-hour format
+\u	the username of the current user
+\w	the current working directory
+\W	the base name of the current working directory

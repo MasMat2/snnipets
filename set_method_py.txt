@@ -1,0 +1,39 @@
+
+s1 = set([1, 2, 3, 4, 5])      # No duplicate values
+s1 = {1, 2, 3, 4, 5}
+
+s1 = set()		       # Empty set
+
+s1.add(6)		       # Add value
+
+s1.update([6, 7, 8])	       # Add several values
+s2 = [7, 8, 9]
+s1.update([6, 7, 8], s2)
+
+s1.remove(5)		       # Remove value
+
+s1.discard(5)		       # Remove value without trowing an error if value not in set
+
+s1 = {1, 2, 3}
+s2 = {2, 3, 4}
+s3 = {3, 4, 5}
+
+s4 = s1.intersection(s2)      # Trow all the values that are in both sets
+s4 = s1.intersection(s2, s3)  # Trow all the values that are in all the sets
+
+s4 = s1.difference(s2)        # All the values in s1 but not in s2
+s4 = s1.difference(s2, s3)    # All the values in s1 but not in s2 or s3
+
+s4 = symmetric_difference(s2) # Get all the values that are not in both
+
+l1 = [1, 2, 3, 1, 2, 3]
+l2 = list(set(l1))            # Get list with duplicates removed
+
+employees = ['Corey', 'Jim', 'Steven', 'April', 'Judy', 'Jenn', 'John', 'Jane']
+gym_members = ['April', 'John', 'Corey']
+developers = ['Judy', 'Corey', 'Steven', 'Jane', 'April'}
+
+result = set(gym_members).intersection(developers)
+result = set(employees).difference(gym_members, developers)
+
+

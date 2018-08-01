@@ -1,0 +1,6 @@
+export FLASK_APP=flaskblog.py     Mac, Linux
+set FLASK_APP=flaskblog.py        Windows
+
+flask run
+
+export FLASK_DEBUG=1              Debug mode

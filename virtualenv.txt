@@ -1,0 +1,12 @@
+virtualenv project_name      	                - Create a new environment
+source environment/bin/activate                 - Activate the environment
+which python                	                - Check path to the python being used
+which pip                             	        - Check path to the environment being used
+pip3 list      		                    	- Check packages in the current environment
+pip3 install package                  	        - Install a new package
+pip3 freeze --local > *.txt  	                - Take local dependencies and store them in a file
+deactivate                   	                - Exit the current environment
+rm -rf Environment           	                - Delete virtualenv
+virutalenv -p /usr/bin/python2.6 py26_env       - Create environment with specified version of python
+python --version                                - Check the python version being used
+pip3 install -r *.txt                           - Install all the packages stored in the file
